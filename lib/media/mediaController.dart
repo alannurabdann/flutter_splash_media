@@ -3,6 +3,7 @@ import 'package:flutter/services.dart' as imageCache;
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_template/helpers/sharedPref.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -10,6 +11,7 @@ import 'package:permission_handler/permission_handler.dart';
 import '../helpers/constants.dart';
 
 class MediaController extends GetxController {
+  SharedPref sp = Get.find();
   RxString localPath = "".obs;
   RxBool permissionReady = false.obs;
   late TargetPlatform? platform;
@@ -46,6 +48,8 @@ class MediaController extends GetxController {
 
   Future<void> prepareSaveDir() async {
     localPath.value = (await findLocalPath())!;
+    sp.saveLocalPath(localPath.value);
+    print("MEDIA : ${sp.getLocalPath}");
 
     print(localPath.value);
     final savedDir = Directory(localPath.value);
@@ -57,7 +61,7 @@ class MediaController extends GetxController {
 
   Future<String?> findLocalPath() async {
     if (platform == TargetPlatform.android) {
-      return Constants.localFilePath;
+      return "/storage/emulated/0/Download";
     } else {
       var directory = await getApplicationDocumentsDirectory();
       return directory.path + Platform.pathSeparator + 'Download';

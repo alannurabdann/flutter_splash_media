@@ -1,10 +1,12 @@
 import 'dart:io';
+import 'package:flutter_getx_template/helpers/sharedPref.dart';
 import 'package:get/get.dart';
 
 import '../helpers/constants.dart';
 import '../media/mediaScreen.dart';
 
 class SplashController extends GetxController {
+  SharedPref sp = Get.find();
   RxBool isFileExists = false.obs;
   RxString filePath = "".obs;
   RxBool isFetched = false.obs;
@@ -13,8 +15,8 @@ class SplashController extends GetxController {
   void onReady() async {
     super.onReady();
     isFetched.value = false;
-    String fileName =
-        Constants.localFilePath + "/" + "${Constants.fileNameSplash}.jpg";
+    String fileName = sp.getLocalPath + "/" + "${Constants.fileNameSplash}.jpg";
+    print("Splash : $fileName");
     if (await File(fileName).exists()) {
       isFileExists.value = true;
       filePath.value = fileName;
