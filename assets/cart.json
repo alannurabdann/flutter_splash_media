@@ -1,0 +1,123 @@
+{
+  "status": 1,
+  "message": "OK",
+  "cart": [
+    {
+      "name": "ASAHI TUNA CHUNKS IN VEGETABLE OIL KLG 185g",
+      "url": "https://klikigr.s3-ap-southeast-1.amazonaws.com/images/products/1588950.png",
+      "frac": 1,
+      "unit": "PCS",
+      "harga_satuan": 30000,
+      "kode_produk": "7000051",
+      "qty": 2,
+      "subtotal": 58500,
+      "harga_per_pcs": 29250,
+      "potongan": [
+        {
+          "jenis": "Potongan",
+          "qty": 1,
+          "nominal": 1000,
+          "subtotal": 1000
+        },
+        {
+          "jenis": "Pot. Member",
+          "qty": 1,
+          "nominal": 500,
+          "subtotal": 500
+        }
+      ]
+    },
+    {
+      "name": "POP MIE MI INSTAN GORENG PEDES GLEDEEK AYAM CUP 75g",
+      "url": "https://d4d3nsi9ojt7w.cloudfront.net/images/products/1266390.png",
+      "frac": 1,
+      "unit": "PCS",
+      "harga_satuan": 5200,
+      "kode_produk": "8000031",
+      "qty": 12,
+      "subtotal": 57000,
+      "harga_per_pcs": 4750,
+      "potongan": [
+        {
+          "jenis": "Potongan",
+          "qty": 12,
+          "nominal": 100,
+          "subtotal": 1200
+        },
+        {
+          "jenis": "Pot. Member",
+          "qty": 2,
+          "nominal": 1000,
+          "subtotal": 2000
+        },
+        {
+          "jenis": "Pot. Member",
+          "qty": 2,
+          "nominal": 200,
+          "subtotal": 400
+        },
+        {
+          "jenis": "Pot. Member",
+          "qty": 2,
+          "nominal": 200,
+          "subtotal": 400
+        },
+        {
+          "jenis": "Pot. Member",
+          "qty": 2,
+          "nominal": 200,
+          "subtotal": 400
+        },
+        {
+          "jenis": "Pot. Member",
+          "qty": 2,
+          "nominal": 200,
+          "subtotal": 400
+        },
+        {
+          "jenis": "Pot. Member",
+          "qty": 2,
+          "nominal": 200,
+          "subtotal": 400
+        },
+        {
+          "jenis": "Pot. Member",
+          "qty": 2,
+          "nominal": 100,
+          "subtotal": 200
+        }
+      ]
+    },
+    {
+      "name": "FOX'S CANDY FRUITS KLG 180g",
+      "url": "https://d4d3nsi9ojt7w.cloudfront.net/images/products/0814340.png",
+      "frac": 1,
+      "unit": "PCS",
+      "harga_satuan": 21900,
+      "kode_produk": "5000021",
+      "qty": 4,
+      "subtotal": 50000,
+      "harga_per_pcs": 12500,
+      "potongan": [
+        {
+          "jenis": "Potongan",
+          "qty": 4,
+          "nominal": 2350,
+          "subtotal": 9400
+        }
+      ]
+    },
+    {
+      "name": "FROZZ CANDY BARLEY MINT BOX 15g",
+      "url": "https://d4d3nsi9ojt7w.cloudfront.net/images/products/0351980.png",
+      "frac": 1,
+      "unit": "PCS",
+      "harga_satuan": 8700,
+      "kode_produk": "2000091",
+      "qty": 3,
+      "subtotal": 26100,
+      "harga_per_pcs": 8700,
+      "potongan": []
+    }
+  ]
+}
